@@ -1,0 +1,63 @@
+.works-container {
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.list {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.list li {
+  font-size: 90px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(66, 165, 36);
+  position: relative;
+}
+
+.list li::after {
+        content: attr(data-prompt);
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 0px;
+        white-space: nowrap;
+      }
+
+      
+.list li:hover::after {
+    color: rgb(66, 165, 36);
+    animation: moveText 0.5s Linear both;
+}
+
+    @keyframes moveText {
+        to{
+          width: 100%;  
+        }
+    }
+
+
+
+.right {
+    flex: 1;
+}

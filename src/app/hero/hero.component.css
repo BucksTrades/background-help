@@ -1,0 +1,88 @@
+.container{
+    height: 100vh;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#title {
+font-size: 75px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(133, 133, 133);
+}
+
+.left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.right {
+    flex: 3;
+    position: relative;
+    outline: 5px yellow;
+    margin-right: 200px;
+}
+
+#line img {
+   height: 25px;
+   width: 75px;
+}
+
+#whatwedo {
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+}
+
+#whatwedo p {
+    margin-left: 10px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(51, 201, 64);
+}
+
+#desc {
+    font-size: 25px;
+    margin-top: -20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(133, 133, 133);
+}
+
+#button button {
+    height: 30px;
+    width: 400px;
+    background-color: pink;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#button button:hover {
+    background-color: rgb(51, 201, 64);
+}
+
+
+.robotplayground {
+    height: 200px;
+    width: 300px;
+    margin-top: -100px;
+    margin-right: 500px;
+    position: relative;
+}
