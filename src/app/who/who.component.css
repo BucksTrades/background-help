@@ -1,4 +1,100 @@
 .who-container {
     height: 100vh;
-    outline: 2px green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    scroll-snap-align: center;
+    overflow: hidden;
 }
+
+.container{
+    height: 100vh;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+
+.right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    position: relative;
+    left: -100px;
+}
+
+.form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+.left {
+    flex: 3;
+    position: relative;
+    outline: 5px yellow;
+    position: relative;
+    left: -100px;
+    overflow: visible;
+}
+
+.button {
+    height: 30px;
+    width: 300px;
+    background-color: pink;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    top: -40px;
+}
+
+.button:hover {
+    background-color: rgb(51, 201, 64);
+}
+
+.whatwedo img {
+    height: 25px;
+    width: 75px;
+}
+
+.whatwedo {
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -40px;
+}
+
+.whatwedo p {
+    margin-left: 10px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(51, 201, 64);
+    
+}
+
+.title {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(133, 133, 133);
+    top: -30px;
+    
+    }
+
+    .desc {
+        font-size: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(133, 133, 133);
+        width: 500px;
+        top: -50px;
+        position: relative;
+    }

@@ -1,0 +1,18 @@
+/* Set the container to enable snapping and control the scroll behavior */
+.bg {
+    width: 100%;
+    height: 100vh; /* Adjust to your preferred viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable snapping along the y-axis */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+  }
+  
+  /* Style the snap sections */
+  .snap-section {
+    width: 100%;
+    height: 100vh; /* Adjust to your preferred section height */
+    scroll-snap-align: start; /* Snap the section's start to the container's start */
+  }
+
+
+  

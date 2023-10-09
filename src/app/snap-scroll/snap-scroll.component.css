@@ -1,0 +1,8 @@
+.snap-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+    overflow: hidden;
+  }
+  

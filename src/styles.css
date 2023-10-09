@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    color: #fff;
+    background-image: url('assets/images/purt.jpg');
+
+}
+
+body p {
+    color: white;
+}
+
+body h1 {
+    color: white;
+}
+
+body .newpagebg {
+    background: linear-gradient(#2b1055,#7597de);
+    block-size: cover;
+    background-position: center;
+    z-index: 1;
+}

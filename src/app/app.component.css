@@ -1,33 +1,16 @@
-
-
-body {
-    color: white;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    &::-webkit-scrollbar{
-        display: none;
-    }
-    
-body ::-webkit-scrollbar{
-    display: none;
-}
-}
-
-
-
-html {
+/* Set the container to enable snapping and control the scroll behavior */
+.bg {
     width: 100%;
-    height: 100%;
-    background-image: url('/assets/images/purt.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 70% 50%;
-    padding: 0 !important;
-    margin: 0 !important;
-    margin-left: 0px !important;
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
-    margin-right: 0px !important;
-}
+    height: 100vh; /* Adjust to your preferred viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable snapping along the y-axis */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+  }
+  
+  /* Style the snap sections */
+  .snap-section {
+    width: 100%;
+    height: 100vh; /* Adjust to your preferred section height */
+    scroll-snap-align: start; /* Snap the section's start to the container's start */
+  }
+  

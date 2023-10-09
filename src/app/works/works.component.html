@@ -1,17 +1,64 @@
 <div class="works-container">
-<div class="container">
-
-<div class="left">
-<ul class="list">
-    <li data-prompt="Web Design"><span>Web Design</span></li>
-    <li data-prompt="Development"><span>Development</span></li>
-    <li data-prompt="Illustration"><span>Illustration</span></li>
-    <li data-prompt="Product Design"><span>Product Design</span></li>
-    <li data-prompt="Social Media"><span>Social Media</span></li>
-</ul>
-</div>
-<div class="right">
-
-</div>
-</div>
+  <div class="container">
+    <div class="left">
+      <ul class="list">
+        <li 
+          (mouseenter)="onMouseEnter('Financial Advisor')" 
+          (mouseleave)="onMouseLeave()" 
+          data-prompt="Financial Advisor"
+        >
+          <span>Financial Advisor</span>
+        </li>
+        <li 
+          (mouseenter)="onMouseEnter('Data Analyst')" 
+          (mouseleave)="onMouseLeave()" 
+          data-prompt="Data Analyst"
+        >
+          <span>Data Analyst</span>
+        </li>
+        <li 
+          (mouseenter)="onMouseEnter('Investor')" 
+          (mouseleave)="onMouseLeave()" 
+          data-prompt="Investor"
+        >
+          <span>Investor</span>
+        </li>
+        <li 
+          (mouseenter)="onMouseEnter('Builder')" 
+          (mouseleave)="onMouseLeave()" 
+          data-prompt="Builder"
+        >
+          <span>Builder</span>
+        </li>
+        <li 
+          (mouseenter)="onMouseEnter('Community')" 
+          (mouseleave)="onMouseLeave()" 
+          data-prompt="Community"
+        >
+          <span>Community</span>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="finadvis" *ngIf="selectedItem === 'Financial Advisor'">
+        <app-finadvis></app-finadvis>
+        <div class="caption"> Text </div>
+      </div>
+      <div class="dataanal" *ngIf="selectedItem === 'Data Analyst'">
+        <app-dataanal></app-dataanal>
+        <div class="caption"> I design products that can be used by retail investors to make more informed financial decisions </div>
+      </div>
+      <div class="inves" *ngIf="selectedItem === 'Investor'">
+        <app-inves></app-inves>
+        <div class="cap"> Text </div>
+      </div>
+      <div class="build" *ngIf="selectedItem === 'Builder'">
+        <app-build></app-build>
+        <div class="capp"> Text </div>
+      </div>
+        <div class="community" *ngIf="selectedItem === 'Community'">
+       <app-community></app-community>
+      </div>
+    </div>
+  </div>
 </div>

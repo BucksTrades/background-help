@@ -3,15 +3,21 @@
       <div class="left">
         <div class="form">
           <div class="title">Contact Us</div>
-          <div class="input">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Write your message" rows="10"></textarea>
+          <form class="contactform" (submit)="sendEmail($event)">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Write your message" rows="10" required></textarea>
             <button class="button">Send</button>
-          </div>
+            <div *ngIf="messageSent">{{ messageSent }}</div>
+            <div *ngIf="messageError">{{ messageError }}</div>
+          </form>
         </div>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <div class="map">
+        <app-map-wrapper></app-map-wrapper>
+        </div>
+      </div>
     </div>
   </div>
   

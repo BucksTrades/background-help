@@ -15,7 +15,7 @@
     flex: 1;
     display: flex;
     align-items: center;
-
+    
 }
 
 .list {
@@ -26,12 +26,13 @@ gap: 20px;
 }
 
 .list li {
-  font-size: 90px;
+  font-size: 75px;
   font-weight: bold;
   cursor: pointer;
   color: transparent;
   -webkit-text-stroke: 1px rgb(66, 165, 36);
   position: relative;
+  width: 700px;
 }
 
 .list li::after {
@@ -60,4 +61,61 @@ gap: 20px;
 
 .right {
     flex: 1;
+    overflow: hidden;
+    left: -200px;
+    margin-left: -200px;
+    width: 400px;
 }
+
+.finadvis {
+    margin-top: 200px;
+
+}
+
+.dataanal {
+margin-bottom: 200px;
+margin-right: 2000px;
+margin-top: 200px;
+}
+
+.inves {
+margin-bottom: -100px;
+}
+
+
+.caption {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    padding: 20px;
+    background-color: rgba(209, 207, 207, 0.575);
+    border-radius: 10px;
+    top: -1500px;
+    left: 500px;
+    overflow: visible;
+}
+
+.cap {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    padding: 20px;
+    background-color: rgba(209, 207, 207, 0.575);
+    border-radius: 10px;
+    top: -800px;
+    left: 500px;
+    overflow: visible; 
+}
+
+.capp {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    padding: 20px;
+    background-color: rgba(209, 207, 207, 0.575);
+    border-radius: 10px;
+    top: -1100px;
+    left: 500px;
+    overflow: visible; 
+}
+

@@ -1,0 +1,25 @@
+#Canvas {
+    height: 50px;
+    width: 300px;
+    top: 0 ;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: visible;
+}
+ 
+.word {
+    width: 200px;
+    height: 70px;
+    padding: 20px;
+    background-color: rgba(209, 207, 207, 0.575);
+    border-radius: 10px;
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    overflow: visible;
+}
+
+.word p {
+    margin-top: -5px;
+}
