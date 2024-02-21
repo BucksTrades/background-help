@@ -1,0 +1,51 @@
+.videocontainer {
+    overflow-y: auto;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 95%;
+    width: 528px;
+    left: 35%;
+    top: 10px;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    cursor: grab;
+    border-radius: 5%;
+}
+
+
+video {
+    scroll-snap-align: start;
+
+}
+
+
+
+.top {
+    position: absolute;
+    top: 0; /* Aligns the top of .top with the top of .container */
+    left: 0; /* Aligns the left of .top with the left of .container */
+    width: 100%; /* Ensures that .top covers the entire container width */
+    height: 300px; /* Height to match .bottom or as needed */
+    z-index: 2; /* Ensures .top is above .bottom */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.videocontainer::-webkit-scrollbar {
+    width: 0.5em; /* Adjust the width as needed */
+    border-radius: 5%;
+}
+
+.videocontainer::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the track */
+    border-radius: 5%;
+}
+
+.videocontainer::-webkit-scrollbar-thumb {
+    background-color: green; /* Set the color of the scrollbar thumb */
+    border-radius: 5%;
+}

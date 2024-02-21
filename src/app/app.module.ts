@@ -20,6 +20,13 @@ import { InvesComponent } from './inves/inves.component';
 import { BuildComponent } from './build/build.component';
 import { CommunityComponent } from './community/community.component';
 import { NewPageComponent } from './new-page/new-page.component';
+import { ParacordComponent } from './paracord/paracord.component';
+import { ScrollService } from './scroll.service';
+import { Renderer2 } from '@angular/core';
+import { OtherexchangeexComponent } from './otherexchangeex/otherexchangeex.component';
+import { VideoreelComponent } from './videoreel/videoreel.component';
+import { PredictionFormComponent } from './prediction-form/prediction-form.component';
+
 
 @NgModule({
   declarations: [
@@ -40,13 +47,17 @@ import { NewPageComponent } from './new-page/new-page.component';
     InvesComponent,
     BuildComponent,
     CommunityComponent,
-    NewPageComponent
+    NewPageComponent,
+    ParacordComponent,
+    OtherexchangeexComponent,
+    VideoreelComponent,
+    PredictionFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [ScrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

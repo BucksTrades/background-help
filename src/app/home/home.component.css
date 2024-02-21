@@ -5,6 +5,7 @@
     overflow-y: scroll; /* Enable vertical scrolling */
     scroll-snap-type: y mandatory; /* Enable snapping along the y-axis */
     scroll-behavior: smooth; /* Enable smooth scrolling */
+    background-image: url('/assets/images/purt.jpg');
   }
   
   /* Style the snap sections */
@@ -15,4 +16,14 @@
   }
 
 
-  
+  .bg::-webkit-scrollbar {
+    width: 0.5em; /* Adjust the width as needed */
+}
+
+.bg::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the track */
+}
+
+.bg::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the color of the scrollbar thumb */
+}

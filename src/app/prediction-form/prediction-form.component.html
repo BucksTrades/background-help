@@ -1,0 +1,35 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<div class="bg">
+
+<h1>Welcome to BucksAI (beta)
+<p id="tag">Unlock the Future of Trading with AI</p></h1>
+
+<div class="desc" id="descone"><p>At BucksAI, we're pioneering the next generation of trading tools. Our AI Ethereum price predictor leverages cutting-edge technology to provide traders like you with invaluable insights. As we continue to refine and enhance our platform, we're committed to empowering you with the data you need to make informed decisions in the dynamic world of cryptocurrency trading.</p>
+</div>
+<!--<div class="desc" id="desctwo"><p>Join us on this journey as we harness the power of AI to revolutionize the way traders analyze and navigate the markets. Explore our tools, dive into the data, and discover the potential that awaits.</p>
+</div>-->
+  <p id="Disclaim">Disclaimer: Our AI predictions are based on historical data and advanced algorithms, but trading involves risk. Always conduct your own research and consider your financial circumstances before making any investment decisions.</p>
+
+<form id="predictionForm">
+  <!-- Add your form fields here if needed -->
+  <button class="button" *ngIf="showButton" type="button" (click)="sendPredictionRequest()">Get Prediction</button>
+  <!--<button *ngIf="showButton" type="button" (click)="sendPredictionRequest()">Get Prediction</button>-->
+</form>
+
+<div *ngIf="loading">
+  <!-- Loading image -->
+  <img class="loading" src="/assets/loadingscreen.gif" alt="Loading..." width="350" height="350">
+ <!--<<p class="loading-text">Welcome To Bucks Trading Terminal</p>>-->
+</div>
+
+<div *ngIf="prediction !== undefined && !loading" class="prediction-container">
+  <div class="info-icon">
+    <img src="/assets/info.png" alt="Info Icon">
+    <span class="info-text">Relative Data, Analytics and Research<br><span class="small-text">Coming Soon!</span></span>
+  </div>
+  <p id='prediction-title'>Prediction for Close Tomorrow</p>
+  <p id='prediction'>{{ prediction }}</p>
+</div>
+
+</div>

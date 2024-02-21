@@ -1,0 +1,180 @@
+.bg {
+    background-color: rgb(51, 1, 51);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body {
+    position: absolute;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0; /* Remove default margin */
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  #prediction {
+    position: absolute;
+    left: 49%;
+    transform: translateX(-50%); /* Center the prediction horizontally */
+    color: #4CAF50;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    
+  }
+
+  #prediction-title {
+    color: #4CAF50;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    left: 50%;
+    font-size: 60px;
+  }
+  
+  /* Additional styling for the loading image */
+  .loading {
+    height: 20vh;
+    width: 12.5vw;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the loading image is on top */
+  }
+  
+  .loading-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif; /* Apply the Montserrat font */
+    text-align: center; /* Center text horizontally */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 15px;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: -400px;
+    margin-bottom: 50px;
+  }
+
+  #tag {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+  p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+  }
+
+  .desc {
+    background-color: #0000006b;
+    height: 100px;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 5%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+    border: 2px solid #333;
+    margin-bottom: 75px;
+}
+
+#desctwo {
+  height: 75px;
+}
+
+#Disclaim {
+  position: absolute;
+  bottom: 20px; /* Adjust bottom distance as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic; /* Make the text italic */
+  text-align: center;
+}
+
+/* Prediction container styling */
+.prediction-container {
+  position: relative;
+}
+
+/* Info icon styling */
+.info-icon {
+  position: absolute;
+  bottom: -300px;
+  right: 0;
+}
+
+/* Text hidden by default */
+.info-text {
+  display: none;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  top: 0px;
+  left: 100px;
+  overflow: visible; 
+}
+
+/* Show text on hover */
+.info-icon:hover .info-text {
+  display: block;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  top: -30px; /* Adjust top distance of the text */
+  right: 0;
+  font-style: italic;
+}
+
+.info-icon img {
+  width: 75px; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.small-text {
+  font-size: 14px; /* Adjust the font size of "Coming Soon" */
+}

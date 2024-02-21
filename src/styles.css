@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     color: #fff;
-    background-image: url('assets/images/purt.jpg');
-
+    background-color: #000000;
+    overflow: hidden;
 }
 
 body p {

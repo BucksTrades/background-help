@@ -25,6 +25,11 @@
     gap: 0px;
     position: relative;
     left: -100px;
+    @media only screen and (max-width: 768px) {
+    align-items: center;
+    flex: 1;
+    left: 20px;
+    }
 }
 
 .form {
@@ -42,6 +47,9 @@
     position: relative;
     left: -100px;
     overflow: visible;
+    @media only screen and (max-width: 768px) {
+    display: none;
+    }
 }
 
 .button {
@@ -60,6 +68,7 @@
 .button:hover {
     background-color: rgb(51, 201, 64);
 }
+
 
 .whatwedo img {
     height: 25px;
@@ -97,4 +106,9 @@
         width: 500px;
         top: -50px;
         position: relative;
+        @media only screen and (max-width: 768px) {
+    
+       
+       width: 90%;
+        }
     }

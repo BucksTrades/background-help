@@ -9,6 +9,10 @@
     width: 1400px;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 768px) {
+    width: 100%;
+       
+    }
 }
 
 .left {
@@ -105,12 +109,18 @@ margin-bottom: -100px;
     top: -800px;
     left: 500px;
     overflow: visible; 
+    margin-bottom: 10px;
+}
+
+.cap p {
+    position: absolute;
+    bottom: 3px
 }
 
 .capp {
     position: relative;
     width: 200px;
-    height: 70px;
+    height: 30px;
     padding: 20px;
     background-color: rgba(209, 207, 207, 0.575);
     border-radius: 10px;

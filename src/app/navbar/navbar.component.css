@@ -4,8 +4,12 @@
     color: white;
     width: 100%;
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 0;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 
@@ -15,18 +19,30 @@
     color: white;
     padding: 10px;
     width: 1100px;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 .logo img {
-    height: 40px;
+    height: 75px;
+    width: 75px;
     right: 20px;
-}
-
-.icon img {
-    height: 40px;
     display: flex;
     align-items: center;
     gap: 50;
+}
+
+.icon img {
+    display: flex;
+    align-items: center;
+    gap: 50;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.37);
+    transition: box-shadow 0.3s ease;
+    border: 2px solid #333;
 }
 
 .links {
@@ -34,6 +50,9 @@
     display: flex;
     gap: 20px;
     margin-right: auto;
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .links li {
@@ -53,7 +72,7 @@
     padding-right: 20px;
 }
 
-#button button{
+.hire-now-button{
     align-items: center;
     width: 100px;
     padding: 10px;
@@ -64,6 +83,6 @@
     cursor: pointer;
 }
 
-#button button:hover {
+.hire-now-button:hover {
     background-color: rgb(51, 201, 64);
 }
